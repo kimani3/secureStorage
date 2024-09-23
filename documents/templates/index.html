@@ -15,9 +15,9 @@
 
 <body>
     <div class="wrapper">
-        <aside class="sidebar">
+        <aside id="sidebar" class="sidebar">
             <div class="d-flex">
-                <button id="toggle-btn" type="button">
+                <button id="toggle-btn" type="button" class="toggle-btn">
                     <i class="lni lni-grid-alt"></i>
                 </button>
                 <div class="sidebar-logo">
@@ -65,65 +65,27 @@
                             </ul>
                         </li>
                         <!-- HR Department -->
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#hr"
-                                aria-expanded="false" aria-controls="hr">
-                                <i class="lni lni-layout"></i>
-                                <span> HR </span>
-                            </a>
-                            <ul id="hr" class="sidebar-dropdown list-unstyled collapse">
-                                <li class="sidebar-item">
-                                    <a href="#" class="sidebar-link">
-                                        Folder 1
-                                    </a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a href="#" class="sidebar-link">
-                                        Folder 2
-                                    </a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a href="#" class="sidebar-link">
-                                        Folder 3
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- Welfare Department -->
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#welfare"
-                                aria-expanded="false" aria-controls="welfare">
-                                <i class="lni lni-layout"></i>
-                                <span> Welfare </span>
-                            </a>
-                            <ul id="welfare" class="sidebar-dropdown list-unstyled collapse">
-                                <li class="sidebar-item">
-                                    <a href="#" class="sidebar-link">
-                                        Folder 1
-                                    </a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a href="#" class="sidebar-link">
-                                        Folder 2
-                                    </a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a href="#" class="sidebar-link">
-                                        Folder 3
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
+                        <!-- (More content here) -->
                     </ul>
                 </li>
+                <div class="sidebar-footer"></div>
             </ul>
         </aside>
     </div>
 
+    <!-- JavaScript to handle sidebar toggle -->
+    <script>
+        const toggleBtn = document.getElementById('toggle-btn');
+        const sidebar = document.getElementById('sidebar');
+
+        toggleBtn.addEventListener('click', function() {
+            sidebar.classList.toggle('collapsed');
+        });
+    </script>
+
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
