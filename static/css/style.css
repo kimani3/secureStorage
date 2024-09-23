@@ -26,27 +26,24 @@ body {
 
 .wrapper {
     display: flex;
+    background-color: #0e2238;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    
 }
 
-.main {
+/* .main {
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
     transition: all 0.35s ease-in-out;
     background-color: #f0f0f0 !important; /* Ensure this is applied */
-}
+} */
 
-#sidebar {
-    width: 70px;
-    min-width: 70px;
-    z-index: 1000;
-    transition: all .25s ease-in-out;
-    background-color: #0e2238 !important; /* Sidebar background */
-    display: flex;
-    flex-direction: column;
-}
 
-#sidebar.expand {
+
+.sidebar.expand {
     width: 260px;
     min-width: 260px;
 }
